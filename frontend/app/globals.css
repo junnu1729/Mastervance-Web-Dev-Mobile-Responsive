@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+ .custom-gradient {
+  background:
+    /* blue spot behind hero area */
+    radial-gradient(
+      circle at 55% 25%,               /* position of the blue glow */
+      rgba(0, 102, 255, 0.18) 0%,      /* center color */
+      rgba(0, 102, 255, 0) 55%         /* fade to transparent */
+    ),
+    /* existing vertical gradient */
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(127, 186, 245, 0.05) 99.99%
+    );
+}
+@keyframes marqueeFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marqueeFromRight 30s linear infinite;
+}
+
+
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+.italicText {
+  font-style: italic;
+}
+
+
+
+.custom-badge-shadow {
+  box-shadow: 0px 0px 8.6px 0px #1C8EFF70;
+}
+
+.font-Inter{
+  font-family: var(--font-Inter);
+}
+
+.font-inria {
+  font-family: var(--font-inria-serif);
+}
+
+.font-instrument {
+  font-family: var(--font-instrument-sans);
+}
+
+
+.font-openSans {
+  font-family: var(--font-open-sans);
+}
